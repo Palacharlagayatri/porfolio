@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: whitesmoke;
+}
+
+/* scrollbar styling */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* all sections styling */
+#home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6%;
+}
+
+#about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  /* padding: 10%; */
+  /* margin: 3rem; */
+}
+
+#education {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7%;
+}
+
+#skills {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#projects {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+
+#contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* home section styling */
+#title1{
+  font-size: 2rem;
+}
+#title2{
+  font-size: 6.5rem;
+  font-weight: bold;
+  color: #d0124f !important;
+}
+#title3{
+  font-size: 2rem;
+}
+
+/* about section styling */
+.about-right-container img{
+  height: 17rem;
+  width: 15rem;
+  border-radius: 7px;
+}
+.about-left-container {
+  font-size:1.5rem;
+  width: 40rem;
+  word-wrap: break-word;
+}
+
+/* education section styling */
+.second-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:5%;
+}
+.secondary-school{
+  padding: 3% !important;
+  background-color: #d0124f;
+}
+.secondary-school *{
+  margin-bottom: 7%;
+}
+.intermediate{
+  padding: 3% !important;
+  background-color: #d0124f;
+}
+.intermediate *{
+  margin-bottom: 7%;
+}
+.btech{
+  padding: 3% !important;
+  background-color: #d0124f;
+}
+.btech *{
+  margin-bottom: 7%;
+}
+
+/* skills section styling */
+#skills h1{
+  margin-bottom: 2.5rem;
+}
+/* .portfolio-section{
+ 
+  padding: 20px;
+} */
+.tech-skills ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.tech-skills ul li{
+  list-style-type: none;
+  padding: 4.5rem 6rem 4rem 2.5rem;
+  background-color: #d0124f;
+  height: 12rem;
+  width: 15rem;
+  margin: 2rem;
+  border-radius: 50%;
+  font-size: 2rem;
+   
+}
+.tech-skills ul li:hover{
+  background-color: white;
+  color: #d0124f;
+  cursor: pointer;
+}
+
+/* .portfolio-section ul li {
+  background-color: #d0124f;
+  height: 5rem;
+  width: 2rem;
+} */
+
+/* projects section styling */
+.project-container{
+  width: 50%;
+  height: 50vh;
+  background-color:#d0124f;
+  display: flex;
+  align-items: center;
+  
+  justify-content: flex-start;
+  
+}
+#projects h1{
+  margin-bottom: 4rem;
+  font-size: 2.2rem;
+}
+#projects img{
+  object-fit: cover;
+  height: 50vh;
+  padding-right: 2rem;
+}
+.project-description{
+  margin: 2rem;
+}
+.project-description *{
+  margin-bottom: 2rem;
+}
+.project-description h2{
+  font-size: 2.2rem;
+}
+.project-description p{
+  font-size: 1.2rem;
+}
+.project-description #technologies{
+  color: black !important;
+  font-weight: bold;
+}
+.project-description a{
+  text-decoration: none;
+  color: black;
+}
+.project-description a:hover{
+  color: white;
+}
+
+/* contact section styling */
+#contact h1{
+  margin-bottom: 2.8rem;
+}
+.contact-info{
+  background-color: antiquewhite;
+  z-index: -1;
+  height: 50vh;
+  width: 50;
+  padding: 5rem;
+  border-radius: 10px;
+}
+.contact-info p{
+  color: #d0124f !important;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+
+}
+.contact-info a{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem !important;
+}
+/* navbar styling */
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #d0124f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
